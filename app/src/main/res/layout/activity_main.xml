@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView_home1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:text="사진 촬영 혹은 사진을 불러와"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_home2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="본인 얼굴의 특징에 맞는 화장법을"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home1" />
+
+    <TextView
+        android:id="@+id/textView_home3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="받아보세요!"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home2" />
+
+    <Button
+        android:id="@+id/btn_gallery_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_radius"
+        android:drawableTop="@drawable/btnimage_galleryxml"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:text="갤러리에서 사진 불러오기"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_home3" />
+
+    <Button
+        android:id="@+id/btn_camera_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_radius"
+        android:drawableTop="@drawable/btnimage_cameraxml"
+        android:text="사진 촬영하기"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_gallery_main"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
